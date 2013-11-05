@@ -1,19 +1,23 @@
-*, *:before, *:after {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  box-sizing: border-box;
- }
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
 html {
-	font-size: 62.5%; 
+	font-size: 62.5%;
 	/*http://snook.ca/archives/html_and_css/font-size-with-rem*/
 }
+
 body {
-	font-size: 16px;
-	font-size: 1.6rem;
+	font-size: 14px;
+	font-size: 1.4rem;
 	line-height: 1.5;
 	font-family: 'Lucida Grande',Verdana,Arial, sans-serif;
 	color: #555;
@@ -21,166 +25,161 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 /* clearing floats */
+
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
+	content: " ";
+	display: table;
 }
 
-a, a:link {
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+a,
+a:link {
 	color: #2BA6CB;
 	text-decoration: none;
 	outline: none;
 }
+
 a:hover {
 	text-decoration: underline;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Droid Sans', sans-serif;
 	margin-top: .5em;
 	margin-bottom: .5em;
-	color: #666;
+	color: #384047;
 }
+
 h1 {
 	font-size: 34px;
 	font-size: 3.4rem;
 	line-height: 1.2;
 }
+
 h2 {
 	font-size: 28px;
 	font-size: 2.8rem;
 }
+
 ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
+
+hr {
+	border: solid #dddddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 1.25em 0 1.1875em;
+	height: 0;
+}
+
 #mobile-nav {
 	display: none;
 }
-#header, footer {
+
+.topbar {
+	height: 44px;
+}
+
+.topbar,
+footer {
 	background: #384047;
 	color: #FFF;
 	padding: .2em;
 }
 
-/* Media Queries */
-/*@media (min-width: 320px) {
-	.container_12 {
-		width: 100%;
-		margin: 0;
-	}
-	#navigation, #sitename, .grid_12, #main, #sidebar {
-		float: none;
-	}
-	#header {
-		text-align: center;
-		display: block;
-		width: 100%;
-	}
-		#header h1 {
-		margin-top: 0;
-		text-align: right;
-		margin-right: 1em;
-	}
-	#header h1 a {
-		text-indent: 25px;
-		font-size: 22px;
-		font-size: 2.2rem;
-		margin: 0 auto;
-		color: #FFF;
-		padding: .2em 0;
-	}
-	#mobile-nav {
-	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-	#mobile-nav ul {
-	display: block;
-	background: #384047;
-	text-align: center;
-	font-family: 'Droid Sans', sans-serif;
-	text-transform: uppercase;
-}
-#mobile-nav li {
-	display: block;
-	width: 100%;
-	height: 2.2em;
-}
-#mobile-nav a {
-	display: block;
-	color: #FFF;
-	height: 2.2em;
-	padding-top: .5em;
-	border-bottom: 1px solid #fff;
-}
-#mobile-nav a:hover {
-	text-decoration: none;
-	background: #ccc;
-	color: #FFF;
-}
-	.menu-icon {
-		display: block;
-		width: 25px;
-		float: left;
-		margin: 8px 0 0 10px;
-	}
-	.menu-icon .icon-bar {
-		display: block;
-		height: 2px;
-		padding-top: 4px;
-		border-bottom: 2px solid #FFF;
-	}
-}*/
-
-@media (min-width: 481px) {
-	h1 {
-		font-size: 30px;
-		font-size: 3rem;
-	}
+.topbar-left {
+	width: 60%;
+	float: left;
 }
 
-@media (min-width: 768px) {
-	h1 {
-		font-size: 34px;
-		font-size: 3.4rem;
-	}
-		#navigation, #sitename, .grid_12, #main, #sidebar {
-		float: left;
-	}
-	#sidebar {
-		width: 31.333%;
-	}
-	#main {
-		width: 64.666%;
-	}
-	.grid_5 {
-		width: 39.666%
-	}
-	.grid_7 {
-		width: 56.333%;
-	}
-	#mobile-nav, .menu-icon {
-		display: none;
-	}
-	#navigation {
-		display: block;
-	}
-	#navigation li {
+.topbar ul {
+	margin-left: .5em;
+}
+
+.topbar ul li {
 	display: inline-block;
-	height: 44px;
-	padding: .5em;
-	}
-	#navigation a {
-		color: #FFF;
-	}
+	padding: .2em .5em;
 }
+
+.topbar nav a {
+	color: #F9F9F9;
+}
+
+.site-name {
+	width: 40%;
+	float: left;
+}
+
+.site-name h1 {
+	font-size: 24px;
+	margin-top: .1em;
+	text-align: right;
+	margin-right: .5em;
+}
+
+.campus {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.campus img {
+	width: 185px;
+	height: 185px;
+	border-radius: 50%;
+}
+
+#main h1 {
+	margin-top: 0;
+}
+
+.services {
+	text-align: center;
+}
+
+.leftad,
+.middlead,
+.rightad {
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: #384047;
+	float: left;
+	margin: 1em;
+	text-align: center;
+	color: #F5F5F5;
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: light;
+	padding-top: 55px;
+}
+#sidebar .events {
+	margin-bottom: 2em;
+}
+#sidebar .events p {
+	margin-top: 0;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: .2em;
+}
+}
+
+/* Media Queries */
