@@ -130,13 +130,30 @@ footer {
 		width: 99%;
 		margin: auto;
 	}
+	.topbar ul {
+		text-align: center;
+	}
+	.topbar ul li {
+		padding: .2em;
+	}
 	.jumbotron {
 		text-align: center;
 	}
 	.grid_4, .grid_8 {
 		float: none;
 	}
-	.jumbotron h1 {
+	.jumbotron .button {
+		padding: .5em 1.2em;
+		background: #3f8abf;
+		color: #FFF;
+		border-radius: 4px;
+		border-bottom: 3px solid #326e99;
+	}
+	.jumbotron .button:hover {
+		background: #326e99;
+		text-decoration: none;
+	}
+	h1 {
 		font-size: 2.4rem;
 	}
 	.services .block img {
@@ -146,12 +163,12 @@ footer {
 
 /*small tablets*/
 @media (min-width: 481px) {
-	body {background-color: yellow;}
+	/*styles here*/
 }
 
 /*tablets*/
 @media (min-width: 769px) {
-	body {background-color: blue;}
+	/*styles here*/
 }
 
 /*desktops*/
