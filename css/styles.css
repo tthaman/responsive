@@ -4,24 +4,23 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-img {
-	max-width: 100%;
-	height: auto;
-}
+
 html {
 	font-size: 62.5%;
 	/*http://snook.ca/archives/html_and_css/font-size-with-rem*/
 }
+
 body {
 	font-size: 14px;
 	font-size: 1.4rem;
 	line-height: 1.5;
-	font-family: 'Lucida Grande',Verdana,Arial, sans-serif;
+	font-family: Verdana,Arial, sans-serif;
 	color: #484848;
 	margin: 0;
 	padding: 0;
 	background: #F5F5F5;
 }
+
 /* clearing floats */
 .clearfix:before,
 .clearfix:after {
@@ -34,6 +33,14 @@ body {
 .clearfix {
 	*zoom: 1;
 }
+
+/* resizable media */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* anchors */
 a,
 a:link {
 	color: #2BA6CB;
@@ -43,6 +50,8 @@ a:link {
 a:hover {
 	text-decoration: underline;
 }
+
+/* typography */
 h1,
 h2,
 h3,
@@ -55,13 +64,17 @@ h6 {
 	color: #384047;
 }
 h1 {
-	font-size: 30px;
-	font-size: 3rem;
+	font-size: 38px;
+	font-size: 3.8rem;
 	line-height: 1.2;
 }
 h2 {
 	font-size: 28px;
 	font-size: 2.8rem;
+}
+h3 {
+	font-size: 20px;
+	font-size: 2rem;
 }
 ul {
 	margin: 0;
@@ -75,21 +88,22 @@ hr {
 	margin: 1.25em 0 1.1875em;
 	height: 0;
 }
+
+/* hide mobile nav on large devices */
 #mobile-nav {
 	display: none;
 }
+
+/* top bar */
 .topbar {
 	height: 50px;
 }
 .topbar,
 footer {
 	background: #384047;
+	/*background: #EA4A3C;*/
 	color: #FFF;
 	padding: .2em;
-}
-.topbar-left {
-	width: 60%;
-	float: left;
 }
 .topbar ul {
 	margin-left: .5em;
@@ -99,10 +113,11 @@ footer {
 	display: inline-block;
 	padding: .2em .5em;
 }
-
 .topbar nav a {
 	color: #F9F9F9;
 }
+
+/* Intro are and hero image on home page */
 .jumbotron {
 	margin-top: 2em;
 	margin-bottom: 2em;
@@ -118,17 +133,52 @@ footer {
 .jumbotron .grid_4 {
 	text-align: center;
 }
+.jumbotron .button {
+	padding: .8em 1.8em;
+	background: #3f8abf;
+	color: #FFF;
+	border-radius: 4px;
+	margin-top: 1em;
+}
+.jumbotron .button:hover {
+	background: #326e99;
+	text-decoration: none;
+}
+.jumbotron h1 {
+	margin-bottom: 0;
+	font-size: 45px;
+	font-size: 4.5rem;
+}
+
 .company {
 	padding-bottom: 2em;
 }
+.sidebar-first ul li {
+	display: block;
+	padding-bottom: .2em;
+	padding-top: .2em;
+	list-style-type: inherit;
+	border-bottom: 1px dotted #CCC;
+}
+.news {
+	border-radius: 4px;
+}
 
 /* Media Queries */
-
 /*smartphones*/
 @media (min-width: 320px) {
+	p {
+		font-size: 1.6rem;
+	}
 	.container_12 {
 		width: 99%;
 		margin: auto;
+	}
+	h1 {
+		font-size: 1.6rem;
+	}
+	.topbar {
+		margin-bottom: 1em;
 	}
 	.topbar ul {
 		text-align: center;
@@ -138,20 +188,15 @@ footer {
 	}
 	.jumbotron {
 		text-align: center;
+		padding-left: .01em;
+		padding-right: .01em;
 	}
-	.grid_4, .grid_8 {
+	/* reset floated elements */
+	.grid_4,
+	.grid_8,
+	.grid_6,
+	.grid_3 {
 		float: none;
-	}
-	.jumbotron .button {
-		padding: .5em 1.2em;
-		background: #3f8abf;
-		color: #FFF;
-		border-radius: 4px;
-		border-bottom: 3px solid #326e99;
-	}
-	.jumbotron .button:hover {
-		background: #326e99;
-		text-decoration: none;
 	}
 	h1 {
 		font-size: 2.4rem;
@@ -159,22 +204,109 @@ footer {
 	.services .block img {
 		padding-top: 2em;
 	}
+
+	/* display mobile nav */
+	#mobile-nav {
+		display: block;
+		background: #384047;
+		text-align: center;
+	}
+	#mobile-nav li {
+		border-bottom: 1px solid #555;
+	}
+	#mobile-nav a {
+		display: block;
+		height: 40px;
+		color: #FFF;
+		padding: .5em;
+	}
+	
+	/* hide main navigation on small devices */
+	.navigation {
+		display: none;
+	}
+	
+	/* display mobile nav icon on small devices */
+	.menu-icon {
+		display: block;
+		height: 30px;
+		width: 30px;
+		margin: .6em;
+		background: transparent;
+		float: left;
+	}
+	.menu-icon .icon-bar {
+		display: block;
+		height: 2px;
+		border-bottom: 2px solid #ccc;
+		padding-top: 4px;
+	}
+	footer {
+		background: #ccc;
+		margin: 0;
+		width: 100%;
+		text-align: center;
+		color: #384047;
+	}
 }
 
 /*small tablets*/
 @media (min-width: 481px) {
-	/*styles here*/
+	.topbar ul li {
+		padding: .2em .5em;
+	}
+	#mobile-nav,
+	.menu-icon {
+		display: none;
+	}
+	.navigation {
+		display: block;
+	}
+	h1 {
+		font-size: 30px;
+		font-size: 3.0rem;
+	}
+		footer {
+		background: #384047;
+		color: #FFF;
+	}
+}
+
+@media (max-width: 768px) {
+	.container_12 .grid_6,
+	.container_12 .grid_3 {
+		clear: both;
+		display: block;
+		width: 100%;
+		left: 0;
+	}
 }
 
 /*tablets*/
-@media (min-width: 769px) {
-	/*styles here*/
+@media (min-width: 768px) {
+	p {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+	h1 {
+		font-size: 38px;
+		font-size: 3.8rem;
+	}
+	.jumbotron {
+		text-align: left;
+	}
+	.grid_3,
+	.grid_4,
+	.grid_6,
+	.grid_8 {
+		float: left;
+	}
 }
 
 /*desktops*/
 @media (min-width: 1024px) {
 	.container_12 {
-		width: 980px;
+		width: 1024px;
 		margin: auto;
-		}
+	}
 }
