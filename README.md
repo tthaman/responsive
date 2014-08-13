@@ -7,6 +7,6 @@ This project demonstrate the many elements of RWD such as multi-column layout, f
 source ordering, resizable images and more.  In addition, the use of a grid system allows us to provide
 order and structure to our website.
 
-To see a live sample of this project go to (mariohernandez.github.io/responsive(http://mariohernandez.github.io/responsive/).
+To see a live sample of this project go to [mariohernandez.github.io/responsive](http://mariohernandez.github.io/responsive/).
 
 [Follow Me](https://twitter.com/designsdrive)
