@@ -138,7 +138,7 @@ hr {
 /* display mobile nav icon on small devices */
 .menu-icon {
   display: block;
-  height: 26px;
+  height: 30px;
   width: 30px;
   margin: .6em;
   background: transparent;
