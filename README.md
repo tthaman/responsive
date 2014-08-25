@@ -1,4 +1,4 @@
-Responsive Web Design (RWD)
+<h1>Responsive Web Design (RWD)</h1>
 
 This is the final project for the Introduction to Responsive Web Design course offerred by [Mario Hernandez]
 (http://about.me/mario.hernandez).
