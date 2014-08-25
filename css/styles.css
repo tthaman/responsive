@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  font-size: 14px;
-  font-size: .875em;
+  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
   font-family: Verdana,Arial, sans-serif;
   color: #484848;
@@ -132,7 +132,7 @@ hr {
 #mobile-nav a:hover {
   background: #3f8abf;
   text-decoration: none;
-  color: #384047;
+  color: #FFF;
 }
 
 /* display mobile nav icon on small devices */
@@ -228,6 +228,10 @@ hr {
 /*============================*/
 /*small tablets*/
 @media all and (min-width: 480px) {
+	body {
+	  font-size: 14px;
+	  font-size: .875em;
+	}
   h1 {
     font-size: 28px;
     font-size: 1.75em;
