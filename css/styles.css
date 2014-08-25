@@ -244,6 +244,11 @@ hr {
     font-size: 18px;
     font-size: 1.125em;
   }
+  .main .article-image {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: .5em;
+}
 }
 
 /*tablets */
@@ -325,11 +330,6 @@ text-decoration: none;
   background: #FFF;
   padding: 1em;
   margin-bottom: 2em;
-}
-.main .article-image {
-  float: left;
-  margin-right: 1em;
-  margin-bottom: .5em;
 }
 .main-left,
 .main-right {
