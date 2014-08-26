@@ -183,7 +183,7 @@ hr {
   font-family: Georgia, 'Times New Roman', serif;
   font-style: italic;
 }
-.hero .button {
+	.button {
   display: block;
   padding: .6em 1.8em;
   background: #3f8abf;
@@ -191,8 +191,9 @@ hr {
   border-radius: 4px;
   text-align: center;
   margin: 1em;
+  border: none;
 }
-.hero .button:hover {
+.button:hover {
   background: #387aa9;
   text-decoration: none;
 }
@@ -223,6 +224,43 @@ hr {
   color: #555;
 }
 
+ /*form */
+.form-wrapper {
+	background: #F5F5F5;
+	border: 1px solid #EDEDED;
+	padding: 10px;
+	font-size: 18px;
+	font-size: 1.125em;
+}
+.form-wrapper legend {
+	background: #FFF;
+	border: 1px solid #EDEDED;
+	padding: .2em .5em;
+	color: #384047;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-size: .75em;
+	border-radius: 4px;
+}
+.form-wrapper label {
+	display: block;
+	padding-left: 5px;
+}
+.form-wrapper input[type='text'],
+.form-wrapper input[type='email'],
+.form-wrapper textarea {
+	display: block;
+	padding: 1em;
+	border: 1px solid #EDEDED;
+	width: 90%;
+	margin-bottom: 2em;
+	border-radius: 4px;
+}
+.form-wrapper input[type='text']:hover,
+.form-wrapper input[type='email']:hover,
+.form-wrapper textarea:hover {
+	border: 1px solid #ccc;
+}
 /*============================*/
   /*Media Queries Start Here   */
 /*============================*/
@@ -248,7 +286,7 @@ hr {
     font-size: 18px;
     font-size: 1.125em;
   }
-  .hero .button {
+  .button {
 	  padding: .8em 1.8em;
   }
   .main .article-image {
@@ -324,11 +362,11 @@ text-decoration: none;
   width: 64.583333333333%;
   float: left;
 }
-.hero .button {
+.button {
   display: inline;
   margin-left: 0;
 }
-.hero .button:hover {
+.button:hover {
   background: #387aa9;
   text-decoration: none;
 }
