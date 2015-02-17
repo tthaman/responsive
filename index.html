@@ -70,7 +70,14 @@
       <p>Recusandae odio ad, odit numquam eaque molestias ullam ipsa ab nulla esse minima alias ex adipisci omnis quo quas quos rerum velit nemo eveniet natus, facilis sint. Sit, molestias, nesciunt.</p>
 
       <hr>
-      <img src="images/nature.jpg" alt="Large Image">
+      <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source media="(min-width: 60em)" srcset="images/nature-large.jpg">
+        <source media="(min-width: 40em)" srcset="images/nature-medium.jpg">
+        <source media="(min-width: 30em)" srcset="images/nature-small.jpg">
+        <!--[if IE 9]></video><![endif]-->
+        <img src="images/nature-small.jpg" alt="Picture of Nature">
+      </picture>
 
       <div class="main-left">
         <h3>This is content on the left</h3>
