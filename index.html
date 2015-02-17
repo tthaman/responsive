@@ -1,98 +1,122 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Responsive Web Design</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/styles.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/normalize.css">
+
+      <!-- Open Sans webfonts  -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+
+      <!-- custom styles  -->
+      <link rel="stylesheet" href="css/styles.css">
+
+      <!--[if lt IE 9 ]>
+        <link rel="stylesheet" href="css/ie.css">
+      <![endif]-->
+
+      <script src="js/modernizr.min.js"></script>
+      <script>
+      // Picture element HTML5 shiv
+        document.createElement( "picture" );
+      </script>
+      <script src="js/picturefill.min.js" async></script>
+      <!-- async allows the page to be loaded asynchronously, w/o waiting to finish loading the rest of the document -->
+      <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
-
-<div class="container">
-<div class="topbar clearfix">
-        <a class="menu-icon" href="#mobile-nav">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </a>
-
-      <nav>
-        <ul class="navigation">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="index.html">About Us</a></li>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="index.html">Contact Us</a></li>
-        </ul>
-      </nav>
-</div><!-- end of topbar -->
-
-<div class="hero clearfix">
-  <div class="hero-image">
-    <img src="images/usc-campus.jpg" alt="USC Campus" title="Responsive Web Design" />
-  </div>
-  <div class="hero-intro">
-    <h1>Responsive Web Design!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi non delectus, dignissimos consequatur temporibus consequuntur odio repellendus, nihil ipsam aut nemo, corporis possimus quod mollitia iure. </p>
-    <a class="button" href="https://github.com/mariohernandez/responsive">Get Source Code &rarr;</a>
-  </div>
-</div><!-- end of hero -->
-
-<div class="content clearfix">
-  <div class="main clearfix">
-    <h2>Picking the right framework</h2>
-    <img class="article-image" src="images/horse.jpg" alt="Frameworks" /> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nemo et, vel vitae totam odit in quia alias repellendus expedita dolorum doloribus, sapiente deserunt aliquam debitis facilis perferendis quod quasi.</p>
-    <p>Rem asperiores similique aspernatur, vel quod aperiam, quisquam nobis vero sit reprehenderit cupiditate numquam eum eos et consectetur inventore nam ipsa. Possimus, vitae, quas sit eius odio tenetur ipsa voluptatibus?</p>
-    <p>Recusandae odio ad, odit numquam eaque molestias ullam ipsa ab nulla esse minima alias ex adipisci omnis quo quas quos rerum velit nemo eveniet natus, facilis sint. Sit, molestias, nesciunt.</p>
-
-    <hr>
-    <img src="images/bridge.jpg" alt="Large Image">
-
-    <div class="main-left">
-      <h3>This is content on the left</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ipsum accusamus accusantium. Aliquam odio velit corporis natus ut aliquid. Provident deserunt atque itaque, est placeat, non nihil voluptas nisi vitae?</p>
-      <p>Eveniet quibusdam laboriosam magnam obcaecati illum commodi a sapiente provident accusantium suscipit praesentium consequuntur tenetur totam fuga quasi culpa soluta, itaque eum consectetur ratione accusamus ipsum facilis vitae. Consectetur, tenetur?</p>
-      <p>Rerum architecto fugiat eveniet necessitatibus, quidem reprehenderit ullam deleniti est numquam dolores fuga, vel assumenda quaerat quam qui a alias iure cupiditate quae quasi odit? Dignissimos eaque cumque harum, tenetur!</p>
-    </div>
-    <div class="main-right">
-  <h3>This is content on the right</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ipsum accusamus accusantium. Aliquam odio velit corporis natus ut aliquid. Provident deserunt atque itaque, est placeat, non nihil voluptas nisi vitae?</p>
-      <p>Eveniet quibusdam laboriosam magnam obcaecati illum commodi a sapiente provident accusantium suscipit praesentium consequuntur tenetur totam fuga quasi culpa soluta, itaque eum consectetur ratione accusamus ipsum facilis vitae. Consectetur, tenetur?</p>
-      <p>Rerum architecto fugiat eveniet necessitatibus, quidem reprehenderit ullam deleniti est numquam dolores fuga, vel assumenda quaerat quam qui a alias iure cupiditate quae quasi odit? Dignissimos eaque cumque harum, tenetur!</p>
-    </div>
-  </div><!-- end of main -->
-
-  <div class="sidebar">
-    <h3>Related Articles</h3>
-    <img src="images/bus.jpg" alt="Transportation">
-    <h4>Addressing images</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus numquam voluptatum nisi consequuntur fugiat placeat, sit! Dolor, repellendus, consequuntur. Veniam fugiat necessitatibus ea exercitationem hic repellendus, maxime suscipit quis!</p>
-
-    <hr>
-
-    <img src="images/city.jpg" alt="Square">
-    <h4>Working with Typography</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, tempora, aspernatur. Quae perferendis ut dolor, quam labore molestiae iure sunt eaque dicta dolores nam molestias, laudantium odio accusantium maiores quasi.</p>
-  </div><!-- end sidebar -->
-</div><!-- end of content -->
-
-    <!-- navigation -->
-      <nav id="mobile-nav">
+  <div class="container">
+    <header role="header" class="topbar clearfix">
+      <a class="menu-icon" href="#mobile-nav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </a>
+      <div class="site-name">Responsive Web Design</div>
+      <nav class="navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">About Us</a></li>
-          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
           <li><a href="news.html">News</a></li>
-          <li><a href="index.html">Contact Us</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
+    </header>
+  <!-- end of topbar -->
 
-<div class="footer">
-  <p>&copy; 2014 - All Rights Reserved</p>
-</div>
-</div><!-- end of container -->
+  <section class="hero clearfix">
+    <div class="hero-image">
+      <img src="images/usc-campus.jpg" alt="USC Campus" title="Responsive Web Design" />
+    </div>
+    <div class="hero-intro">
+      <h1>Responsive Web Design!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi non delectus, dignissimos consequatur temporibus consequuntur odio repellendus, nihil ipsam aut nemo, corporis possimus quod mollitia iure. </p>
+      <a class="button" href="https://github.com/mariohernandez/responsive">Get Source Code &rarr;</a>
+    </div>
+  </section><!-- end of hero -->
 
+  <div class="content clearfix">
+    <section class="main clearfix">
+      <h2>Picking the right framework</h2>
+      <img class="article-image" src="images/horse.jpg" alt="Frameworks" /> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nemo et, vel vitae totam odit in quia alias repellendus expedita dolorum doloribus, sapiente deserunt aliquam debitis facilis perferendis quod quasi.</p>
+      <p>Rem asperiores similique aspernatur, vel quod aperiam, quisquam nobis vero sit reprehenderit cupiditate numquam eum eos et consectetur inventore nam ipsa. Possimus, vitae, quas sit eius odio tenetur ipsa voluptatibus?</p>
+      <p>Recusandae odio ad, odit numquam eaque molestias ullam ipsa ab nulla esse minima alias ex adipisci omnis quo quas quos rerum velit nemo eveniet natus, facilis sint. Sit, molestias, nesciunt.</p>
+
+      <hr>
+      <img src="images/nature.jpg" alt="Large Image">
+
+      <div class="main-left">
+        <h3>This is content on the left</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ipsum accusamus accusantium. Aliquam odio velit corporis natus ut aliquid. Provident deserunt atque itaque, est placeat, non nihil voluptas nisi vitae?</p>
+        <p>Eveniet quibusdam laboriosam magnam obcaecati illum commodi a sapiente provident accusantium suscipit praesentium consequuntur tenetur totam fuga quasi culpa soluta, itaque eum consectetur ratione accusamus ipsum facilis vitae. Consectetur, tenetur?</p>
+        <p>Rerum architecto fugiat eveniet necessitatibus, quidem reprehenderit ullam deleniti est numquam dolores fuga, vel assumenda quaerat quam qui a alias iure cupiditate quae quasi odit? Dignissimos eaque cumque harum, tenetur!</p>
+      </div>
+      <div class="main-right">
+    <h3>This is content on the right</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ipsum accusamus accusantium. Aliquam odio velit corporis natus ut aliquid. Provident deserunt atque itaque, est placeat, non nihil voluptas nisi vitae?</p>
+        <p>Eveniet quibusdam laboriosam magnam obcaecati illum commodi a sapiente provident accusantium suscipit praesentium consequuntur tenetur totam fuga quasi culpa soluta, itaque eum consectetur ratione accusamus ipsum facilis vitae. Consectetur, tenetur?</p>
+        <p>Rerum architecto fugiat eveniet necessitatibus, quidem reprehenderit ullam deleniti est numquam dolores fuga, vel assumenda quaerat quam qui a alias iure cupiditate quae quasi odit? Dignissimos eaque cumque harum, tenetur!</p>
+      </div>
+    </section><!-- end of main -->
+
+    <aside class="sidebar">
+      <h3>Related Articles</h3>
+      <img src="images/bus.jpg" alt="Transportation">
+      <h4>Addressing images</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus numquam voluptatum nisi consequuntur fugiat placeat, sit! Dolor, repellendus, consequuntur. Veniam fugiat necessitatibus ea exercitationem hic repellendus, maxime suscipit quis!</p>
+
+      <hr>
+
+      <img src="images/city.jpg" alt="Square">
+      <h4>Working with Typography</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, tempora, aspernatur. Quae perferendis ut dolor, quam labore molestiae iure sunt eaque dicta dolores nam molestias, laudantium odio accusantium maiores quasi.</p>
+    </aside><!-- end sidebar -->
+  </div><!-- end of content -->
+
+  <!-- mobile navigation -->
+  <nav id="mobile-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">About Us</a></li>
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="index.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <!-- end of mobile navigation -->
+
+<footer class="footer">
+  <p>&copy; 2015 - All Rights Reserved</p>
+</footer>
+
+  </div>
+  <!-- end of container -->
 </body>
 </html>
