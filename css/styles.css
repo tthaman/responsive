@@ -1,15 +1,10 @@
+/*target / context = result */
 *,
 *:before,
 *:after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-html {
-  /*font-size: 62.5%;*/
-  /*http://snook.ca/archives/html_and_css/font-size-with-rem*/
-}
-
 body {
   font-size: 16px;
   font-size: 1em;
@@ -20,7 +15,6 @@ body {
   padding: 0;
   background: #F5F5F5;
 }
-
 /* clearing floats */
 .clearfix:before,
 .clearfix:after {
@@ -33,7 +27,6 @@ body {
 .clearfix {
   *zoom: 1;
 }
-
 /* resizable media */
 img,
 embed,
@@ -41,7 +34,6 @@ object,
 video {
   max-width: 100%;
 }
-
 /* anchors */
 a,
 a:link {
@@ -101,10 +93,9 @@ hr {
  /*structure */
 .container {
   width: 90%;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto 1em auto;
 }
-
 /* top bar */
 .topbar {
   margin-bottom: 2em;
@@ -180,8 +171,6 @@ hr {
   border-radius: 50%;
 }
 .hero-intro {
-  width: 64.583333333333%;
-  float: left;
   float: none;
   width: 100%;
 }
@@ -209,8 +198,7 @@ hr {
   background: #387aa9;
   text-decoration: none;
 }
-
- /*content */
+/*content */
 .content {
   padding: 0;
   margin-bottom: 2em;
@@ -235,8 +223,7 @@ hr {
   background: #F5F5F5;
   color: #555;
 }
-
- /*form */
+/*form */
 .form-wrapper {
   background: #F5F5F5;
   border: 1px solid #EDEDED;
@@ -334,8 +321,7 @@ hr {
   .site-name {
     display: none;
   }
-
-/* hide mobile nav on large devices */
+  /* hide mobile nav on large devices */
 #mobile-nav {
   display: none;
 }
@@ -401,17 +387,17 @@ text-decoration: none;
 }
 .main-left,
 .main-right {
-  width: 49%;
+  width: 48%;
   float: left;
 }
 .main-left {
-  margin-right: 2%;
+  margin-right: 3%;
 }
 .sidebar {
   border: none;
 }
 }
-
+/*laptops and above*/
 @media all and (min-width: 860px) {
   h1 {
     font-size: 38px;
@@ -426,7 +412,7 @@ text-decoration: none;
 .main-left,
 .main-right {
   width: 47.619047619048%;
-  float: left;
+  /*float: left;*/
 }
 .main-left {
   margin-right: 2.380952380952%;
