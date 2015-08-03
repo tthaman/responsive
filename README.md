@@ -3,8 +3,8 @@
 This is the final project for the Introduction to Responsive Web Design course offerred by [Mario Hernandez]
 (http://about.me/mario.hernandez).
 
-This project demonstrate the many elements of RWD such:
-  - as multi-column layout,
+This project demonstrate the many elements of RWD such as:
+  - multi-column layout,
   - flexible navigation,
   - source ordering,
   - resizable images
