@@ -1,4 +1,8 @@
 /*target / context = result */
+
+/* =============================
+/*        box sizing
+/* ============================= */
 *,
 *:before,
 *:after {
@@ -6,18 +10,11 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: Verdana,Arial, sans-serif;
-  color: #484848;
-  margin: 0;
-  padding: 0;
-  background: #F5F5F5;
-}
 
-/* clearing floats */
+
+/* =============================
+/*       clearing floats
+/* ============================= */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -32,7 +29,26 @@ body {
   *zoom: 1;
 }
 
-/* resizable media */
+
+/* =============================
+/*      base body styles
+/* ============================= */
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: Verdana,Arial, sans-serif;
+  color: #484848;
+  margin: 0;
+  padding: 0;
+  background: #F5F5F5;
+}
+
+
+
+/* =============================
+/*      responsive media
+/* ============================= */
 img,
 object,
 video {
@@ -40,7 +56,11 @@ video {
   height: auto;
 }
 
-/* anchors */
+
+
+/* =============================
+/*          all links
+/* ============================= */
 a,
 a:link {
   color: #3f8abf;
@@ -52,7 +72,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* typography */
+
+
+/* =============================
+/*        typography
+/* ============================= */
 h1,
 h2,
 h3,
@@ -87,12 +111,26 @@ h4 {
   font-size: 1.2rem;
 }
 
-ul {
+
+
+/* =============================
+/*          lists
+/* ============================= */
+ul,
+ol {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
+ul {
+  list-style: normal;
+}
+
+
+
+/* =============================
+/*          horizontal line
+/* ============================= */
 hr {
   border: solid #dddddd;
   border-width: 1px 0 0;
@@ -101,14 +139,53 @@ hr {
   height: 0;
 }
 
- /*structure */
+/* --------------------------------------------------------*/
+
+
+/* =============================
+/*          structure
+/* ============================= */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto 1rem auto;
 }
 
-/* top bar */
+.content {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.main {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.main-left,
+.main-right {
+  width: 100%;
+}
+
+.sidebar {
+  width: 100%;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.footer {
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  font-size: 0.750rem;
+  background: #F5F5F5;
+  color: #555;
+}
+/* -------------------------------------------- */
+
+
+
+/* =============================
+/*          topbar
+/* ============================= */
 .topbar {
   margin-bottom: 2rem;
 }
@@ -128,12 +205,17 @@ hr {
   margin-right: 1rem;
 }
 
+
+
+/* =============================
+/*          navigation
+/* ============================= */
 /* hide main navigation on small devices */
 .navigation {
   display: none;
 }
 
-  /* display mobile nav */
+/* display mobile nav */
 #mobile-nav {
   display: block;
   background: #384047;
@@ -142,6 +224,7 @@ hr {
 
 #mobile-nav li {
   border-bottom: 1px solid #555;
+  list-style: none;
 }
 
 #mobile-nav a {
@@ -172,8 +255,13 @@ hr {
   border-bottom: 2px solid #ccc;
   padding-top: 4px;
 }
+/* --------------------------------------------*/
 
-/*hero area */
+
+
+/* =============================
+/*          hero
+/* ============================= */
 .hero {
   padding: 1rem;
   padding-bottom: 1rem;
@@ -231,81 +319,11 @@ hr {
   background: #387aa9;
   text-decoration: none;
 }
+/* ---------------------------------------- */
 
-/*content */
-.content {
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-.main {
-  width: 100%;
-  padding-bottom: 1.5rem;
-}
-
-.main-left,
-.main-right {
-  width: 100%;
-}
-
-.sidebar {
-  width: 100%;
-  padding-top: 1.5rem;
-  border-top: 1px solid #ddd;
-}
-
-.footer {
-  padding: 0.2rem 0.5rem;
-  text-align: center;
-  font-size: 0.750rem;
-  background: #F5F5F5;
-  color: #555;
-}
-
-/*form */
-.form-wrapper {
-  background: #F5F5F5;
-  border: 1px solid #EDEDED;
-  padding: 10px;
-}
-
-.form-wrapper legend {
-  background: #FFF;
-  border: 1px solid #EDEDED;
-  padding: 0.2rem 0.5rem;
-  color: #384047;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-size: 0.8rem;
-  border-radius: 4px;
-}
-
-.form-wrapper label {
-  display: block;
-  padding-left: 5px;
-}
-
-.form-wrapper input[type='text'],
-.form-wrapper input[type='email'],
-.form-wrapper textarea {
-  display: block;
-  padding: 1rem;
-  border: 1px solid #EDEDED;
-  width: 90%;
-  margin-bottom: 2rem;
-  border-radius: 4px;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-
-.form-wrapper input[type='text']:hover,
-.form-wrapper input[type='email']:hover,
-.form-wrapper textarea:hover {
-  border: 1px solid #ccc;
-}
 
 /*============================*/
-  /*Media Queries Start Here   */
+/*  media queries
 /*============================*/
 /*small tablets*/
 @media all and (min-width: 480px) {
@@ -340,7 +358,7 @@ hr {
   }
 }
 
-/*tablets */
+/* large tablets */
 @media all and (min-width: 768px) {
   h1 {
     font-size: 48px;
@@ -365,6 +383,7 @@ hr {
   .site-name {
     display: none;
   }
+
   /* hide mobile nav on large devices */
   #mobile-nav {
     display: none;
@@ -380,27 +399,27 @@ hr {
   }
 
   .topbar ul {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .topbar ul li {
-  display: inline-block;
-  margin-right: -5px;
+    display: inline-block;
+    margin-right: -5px;
   }
 
   .topbar nav a {
-  display: inline-block;
-  color: #F9F9F9;
-  padding: 0.7rem 1.2rem;
+    display: inline-block;
+    color: #F9F9F9;
+    padding: 0.7rem 1.2rem;
   }
 
   .topbar nav a:hover,
   .topbar nav a.active,
   .topbar nav a:focus {
-  background: #3f8abf;
-  text-decoration: none;
+    background: #3f8abf;
+    text-decoration: none;
   }
 
   .hero {
